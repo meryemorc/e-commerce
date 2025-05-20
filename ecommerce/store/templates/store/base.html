@@ -91,7 +91,14 @@
                         
                         </li>
                     
-        
+                        {% for category in all_categories %}
+
+                        <li>
+
+                            <a class="dropdown-item" href="{% url 'store' %}"> All </a>
+                        
+                        </li>
+                        {% endfor %}
                     
                     </ul>
 
@@ -112,7 +119,8 @@
                     <a class="btn btn-alert navbar-btn text-white" type="button"  href="/"> Register </a>
 
                 </li>
-
+                
+               
 
                 <li class="nav-item">
 
