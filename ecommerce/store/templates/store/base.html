@@ -95,7 +95,7 @@
 
                         <li>
 
-                            <a class="dropdown-item" href="{% url 'store' %}"> All </a>
+                            <a class="dropdown-item" href="{% url 'store' %}">{{ category.name | capfirst }} </a>
                         
                         </li>
                         {% endfor %}
